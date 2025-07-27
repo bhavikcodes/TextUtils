@@ -32,6 +32,7 @@ function App() {
     }
   };
 
+  
   const handleSwitch = () => {
     if (mode == "light") {
       setMode("dark");
