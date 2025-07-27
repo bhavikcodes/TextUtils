@@ -1,5 +1,6 @@
 {
-  "homepage": "https://bhavikcodes.github.io/TextUtils""name": "text-utils",
+  "homepage": "https://bhavikcodes.github.io/TextUtils",
+  "name": "text-utils",
   "private": true,
   "version": "0.0.0",
   "type": "module",
