@@ -8,7 +8,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route,Link } from "react-router-dom";
 
 function App() {
-
+ 
   const [mode, setMode] = useState("light");
   const [alert, setAlert] = useState({ msg: "", type: "" });
   const [themeColor, setThemeColor] = useState("");
