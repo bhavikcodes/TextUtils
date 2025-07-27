@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import About from './components/About'
 import Navbar from './components/Navbar'
 import TextForm from './components/TextForm'
 import Alert from './components/Alert'
-import React from "react";
-import { BrowserRouter as Router, Routes, Route,Link } from "react-router-dom";
+
+
 
 function App() {
  
@@ -58,16 +57,12 @@ function App() {
 
   return (
     <>
-      <Router>
+      
         <Navbar mode={mode} handleSwitch={handleSwitch} themeColor={themeColor} handleThemeChange={handleThemeChange} alert={alert} />
         <Alert alertMessage={alert} />
         <div className="container-lg my-3" >
-          <Routes>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/" element={<TextForm mode={mode} themeColor={themeColor} showAlert={showAlert} />}/>
-          </Routes>
+            <TextForm mode={mode} themeColor={themeColor} showAlert={showAlert} />
         </div>
-      </Router>
     </>
   )
 }
